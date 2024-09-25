@@ -36,9 +36,14 @@ h1 {
   line-height: 1.1;
 }
 
+#logo {
+  padding: 0% 2% 0 2%;
+}
 #mainTitle {
-  margin: 0;
-  padding: 1% 0 0 2%;
+  padding-top: 1.5em;
+  height: 7.5em;
+  align-items: center;
+  display: flex;
 }
 
 button {

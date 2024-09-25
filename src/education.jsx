@@ -3,6 +3,6 @@ return (
     <>
         <p>Education.Qualification</p>
     </>
-    );
+);
 }
     

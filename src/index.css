@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgb(0, 37, 202);
+  color: mediumblue;
   background-color: #242424;
 
   font-synthesis: none;
@@ -15,35 +15,47 @@
 
 a {
   font-weight: 500;
-  color: rgb(0,37,202);
+  color: mediumblue;
   text-decoration: inherit;
 }
 a:hover {
-  color: rgb(48, 86, 255);
+  color:dodgerblue;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(to bottom right, gold 20%, white 20% 22%,gold 22% 24%, white 24% 92%, gold 92% 94%, white 94%);
-  /*background-color: rgb(255, 218, 53);*/
+  background: linear-gradient(to bottom right,
+  gold 20%, white 20% 22%,
+  gold 22% 24%, white 24% 92%,
+  gold 92% 94%, white 94%);
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 5em;
-  line-height: 1.1;
-}
-
 #logo {
   padding: 0% 2% 0 2%;
 }
+
 #mainTitle {
   padding-top: 1.5em;
   height: 7.5em;
   align-items: center;
   display: flex;
+}
+
+#mainTitle h1 {
+  font-size: 5em;
+  line-height: 1;
+}
+
+#homeContent {
+  margin: 4% 20%;
+  text-align: center;
+}
+
+#homeContent h3 {
+  margin: -1em;
 }
 
 button {
@@ -79,9 +91,10 @@ button:focus-visible {
 }
 
 nav {
-float:right;
-font-size:x-large;
-padding-right: 2%;
-
+  display: flex;
+  justify-content: space-evenly;
+  font-size: x-large;
+  padding: 0 0;
+  margin: 0;
 }
 

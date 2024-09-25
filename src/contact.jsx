@@ -1,9 +1,9 @@
 export default function Contact() {
-    return (
+return (
     <>
         <p>Contact</p>
         <p>Hello there</p>
     </>
-    );
+);
 }
     

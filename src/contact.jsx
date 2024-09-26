@@ -1,4 +1,8 @@
+//Contact - Ido Isaac - 301374969 - 09.26.2024
+//For tracking state of form
 import { useState } from 'react';
+//For sending the user back to homepage after form is sent
+import { useNavigate } from 'react-router-dom';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -14,6 +18,8 @@ export default function Contact() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     //And this is for the error message
     const [errorMessage, setErrorMessage] = useState('');
+    //Initialize the navigate function
+    const navigate = useNavigate();
 
     //This is called whenever anything changes and updates the values in the form
     const handleChange = (e) => {
@@ -50,11 +56,15 @@ export default function Contact() {
                 message: ''
             });
 
-            //Deletes the error message and displays success message
+            //Successfully sent form
             setIsSubmitted(true);
             setErrorMessage('');
+            //Wait 3 seconds then redirect to homepage
+            setTimeout(() => {
+                navigate('/');
+            }, 3000);
 
-            //Displays error message
+            //Unsuccessful
         } catch (error) {
             setErrorMessage('There was a problem with your submission. Please try again.');
             setIsSubmitted(false);

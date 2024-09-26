@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../src/Logo.png'
+import Logo from '../src/LogoBlue.png'
 
 export default function Layout() {
   return (

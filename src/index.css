@@ -41,6 +41,7 @@ body {
   padding-top: 1.5em;
   height: 7.5em;
   align-items: center;
+  justify-content: center;
   display: flex;
 }
 
@@ -96,5 +97,53 @@ nav {
   font-size: x-large;
   padding: 0 0;
   margin: 0;
+}
+
+#contactPage {
+  padding: 20px;
+  text-align: center;
+}
+
+#contactInfo {
+  margin-bottom: 20px;
+}
+
+.successMessage {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: lightgray;
+  color: black;
+}
+
+.contactForm button {
+  padding: 10px 20px;
+  border: none;
+  background-color: mediumblue;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.contactForm button:hover {
+  background-color: gold;
 }
 

@@ -19,7 +19,7 @@ export default function About() {
             </p>
             <p>
                 For a more detailed overview of my qualifications and experience, feel free to view  
-                <a href="..\public\Ido_Isaac.pdf" target="_blank" rel="noopener noreferrer"> My Resume</a>.
+                <a href="/Ido_Isaac.pdf" target="_blank" rel="noopener noreferrer"> My Resume</a>.
             </p>
         </div>
         </>

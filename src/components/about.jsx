@@ -6,6 +6,7 @@ export default function About() {
         <>
         <div id='content'>
             <h2>About Me</h2>
+            <img src='/IdoIsaac_ProfilePic.png' alt='Ido Isaac Profile Picture'></img>
             <p>
                 Hello! I'm Ido Isaac, a passionate game programmer and dedicated professional.
                  With a background in arts and graphic design, I combine creativity with strong leadership skills 

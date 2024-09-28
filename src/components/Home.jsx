@@ -1,12 +1,17 @@
 //Home - Ido Isaac - 301374969 - 09.26.2024
 import { NavLink } from 'react-router-dom';
 
+//Function to calculate my age
 export default function Home() {
+    //My birthday
     const birthDate = new Date('1993-08-22');
     const today = new Date();
+    //calculates age disregarding months
     const age = today.getFullYear() - birthDate.getFullYear();
+    //Checks if my birthday has occured this year by comparing days and months
     const hasBirthdayPassed = today.getMonth() > birthDate.getMonth() ||
         (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+    //Reduces 1 year from age if birthday hasn't passed this year
     const finalAge = hasBirthdayPassed ? age : age - 1;
 
     return (

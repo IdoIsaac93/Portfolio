@@ -12,6 +12,7 @@ export default function Services() {
                 <li><strong>Game Design:</strong> Crafting engaging gameplay mechanics and user experiences.</li>
                 <li><strong>Worldbuilding:</strong> Creating immersive worlds with rich narratives and environments.</li>
                 <li><strong>Web Design and Coding:</strong> Designing and coding responsive websites to showcase your projects.</li>
+                <li><strong>General Programming:</strong> General application programming using C# or Java.</li>
             </ul>
             <p>If you're interested in collaborating or have any questions, feel free to <NavLink to="/contact" activeclassname="active-link">reach out!</NavLink></p>
         </div>

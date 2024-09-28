@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: mediumblue;
-  background-color: black;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -61,7 +61,8 @@ button:focus-visible {
 
 /*Title*/
 #logo {
-  padding: 0% 2% 0 2%;
+  margin: 0% 2% 0 2%;
+  background-color: gold;
 }
 
 #mainTitle {
@@ -78,13 +79,20 @@ button:focus-visible {
 }
 
 /*Body and content*/
-body {
+html, body {
+  height: 100%; /* Ensure the body takes up the full height */
   margin: 0;
-  background: linear-gradient(to bottom right,
-  gold 20%, white 20% 22%,
-  gold 22% 24%, white 24% 92%,
-  gold 92% 94%, white 94%);
-  place-items: center;
+  background:
+    linear-gradient(to bottom right,
+    gold 15%, transparent 15% 17%,
+    gold 17% 19%, transparent 19% 92%,
+    gold 92% 94%, transparent 94%)0 0,
+    linear-gradient(to right, gold 2%,transparent 2% 98%, gold 98%)0 0;
+    background-attachment: fixed;
+}
+
+body {
+  
   min-width: 320px;
   min-height: 100vh;
 }
@@ -99,11 +107,17 @@ body span {
 
 #content {
   margin: 4% 20%;
+  padding-bottom: 5%;
   text-align: center;
+  font-size: large;
 }
 
 #content h3 {
   margin: -1em;
+}
+
+ul {
+  list-style-type: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -168,3 +182,30 @@ body span {
   background-color: gold;
 }
 
+/*Modal Styles*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-image {
+  max-width: 80vw;
+  max-height: 80vh;
+  z-index: 1001;
+}

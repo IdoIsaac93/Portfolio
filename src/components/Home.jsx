@@ -1,4 +1,6 @@
 //Home - Ido Isaac - 301374969 - 09.26.2024
+import { NavLink } from 'react-router-dom';
+
 export default function Home() {
     const birthDate = new Date('1993-08-22');
     const today = new Date();
@@ -12,7 +14,7 @@ export default function Home() {
             <h3>Hello World!</h3>
             <h1>Welcome to My Portfolio!</h1>
             <p>
-                Hello! My name is <span><b>Ido Isaac</b></span>, and I am {finalAge} years old. 
+                Hello! My name is <NavLink to="/about" activeclassname="active-link">Ido Isaac</NavLink>, and I am {finalAge} years old. 
                 I am a passionate aspiring game designer currently studying at Centennial College in Canada.
             </p>
             <h2>Mission Statement</h2>

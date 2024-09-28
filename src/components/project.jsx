@@ -13,12 +13,12 @@ return (
             a valuable learning experience. As a result, my subsequent projects have been more 
             polished and of a higher caliber.</p>
             <video controls width="600">
-                <source src="../../public/MonsterHunter3D-DemoVideo.mp4" type="video/mp4" />
+                <source src="/MonsterHunter3D-DemoVideo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <p>
                 For an in depth explanation of the project, you can download this 
-                <a href="../public/MonsterHunter-Presentation.pptx" target="_blank" rel="noopener noreferrer"> Presentation</a>.
+                <a href="/MonsterHunter-Presentation.pptx" target="_blank" rel="noopener noreferrer"> Presentation</a>.
             </p>
             <br></br><br></br>
             <h3>Calculator - Programmer</h3>
@@ -29,7 +29,7 @@ return (
                 selected as an example of exemplary coding practices.
             </p>
             <video controls width="600">
-                <source src="..\public\IdoIsaac_CalculatorDemo.mp4" type="video/mp4" />
+                <source src="/IdoIsaac_CalculatorDemo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
     </div>

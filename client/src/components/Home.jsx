@@ -1,5 +1,6 @@
 //Home - Ido Isaac - 301374969 - 09.26.2024
 import { NavLink } from 'react-router-dom';
+import React from 'react';
 
 //Function to calculate my age
 export default function Home() {

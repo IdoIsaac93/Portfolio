@@ -1,6 +1,6 @@
 //Contact - Ido Isaac - 301374969 - 09.26.2024
 //For tracking state of form
-import { useState } from 'react';
+import React, { useState } from 'react';
 //For sending the user back to homepage after form is sent
 import { useNavigate } from 'react-router-dom';
 

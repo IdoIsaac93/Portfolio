@@ -1,4 +1,5 @@
 //Services - Ido Isaac - 301374969 - 09.26.2024
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default function Services() {
